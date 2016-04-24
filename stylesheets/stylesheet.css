@@ -159,10 +159,10 @@ a.button span {
   background: transparent url(../images/tar-gz-icon.png) 12px 50% no-repeat;
 }
 #view-on-individual span {
-  background: transparent url(../images/individual.jpg) 12px 50% no-repeat;
+  background: transparent url(../images/individual.png) 12px 50% no-repeat;
 }
 #view-on-team span {
-  background: transparent url(../images/team.jpg) 12px 50% no-repeat;
+  background: transparent url(../images/team.png) 12px 50% no-repeat;
 }
 #view-on-github {
   margin-right: 0;
