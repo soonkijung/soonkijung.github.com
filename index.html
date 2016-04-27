@@ -61,7 +61,7 @@
             		$rss = simplexml_load_file($url);
             		echo "DEBUG".$rss;
             		foreach ($rss->channel->item as $item) {
-              			echo "<tr></table><th class=\"kboard-latest-title\">";
+              			echo "<tr><th class=\"kboard-latest-title\">";
               			echo $item['description']."</th>";
               			echo "<th class=\"kboard-latest-title\">"
               			echo $item['lastBuildDate']."</th></tr>";
