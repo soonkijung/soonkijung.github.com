@@ -49,14 +49,14 @@
         </h3>
         
         <?php
-	  echo '<table>';
-    	  echo '<thead>';
-    	  echo '	<tr>';
-    		echo  '		<th class="kboard-latest-title">제목</th>';
-    		echo  '		<th class="kboard-latest-date">작성일</th>';
-    	  echo '	</tr>';
-    	  echo '</thead>';
-	  echo '<tbody>';
+	  echo "<table>";
+    	  echo "<thead>";
+    	  echo "<tr>";
+    	  echo "	<th class="kboard-latest-title">제목</th>';
+    	  echo "	<th class="kboard-latest-date">작성일</th>';
+    	  echo "</tr>";
+    	  echo "</thead>";
+	  echo "<tbody>";
     	  	$url = "http://kuptf.org/?feed=rss2&page_id=70";
             	$rss = simplexml_load_file($url);
             	echo $rss[channel];
