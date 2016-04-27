@@ -60,12 +60,14 @@
     		  	$url = "http://kuptf.org/?feed=rss2&page_id=70"
             		$rss = simplexml_load_file($url);
             		echo $rss[channel];
+            		/*
             		foreach ($rss->channel->item as $item) {
               			echo '<tr><th class=\"kboard-latest-title\">';
               			echo $item['description'].'</th>';
               			echo '<th class=\"kboard-latest-title\">'
               			echo $item['lastBuildDate'].'</th></tr>';
             		}
+            		*/
           	   ?>
 		</tbody>
       	</table>
