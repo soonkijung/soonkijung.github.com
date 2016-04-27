@@ -59,7 +59,6 @@
     		  <?php
     		  	$url = "http://kuptf.org/?feed=rss2&page_id=70"
             		$rss = simplexml_load_file($url);
-            		print '<h2><img style="vertical-align: middle;" src="'.$rss->channel->image->url.'" /> '.$rss->channel->title.'</h2>'; // channel title + img with src
             		echo "DEBUG".$rss;
             		foreach ($rss->channel->item as $item) {
               			echo "<tr><th class=\"kboard-latest-title\">";
