@@ -59,7 +59,7 @@
     		  <?php
     		  	$url = "http://kuptf.org/?feed=rss2&page_id=70"
             		$rss = simplexml_load_file($url);
-            		echo $rss;
+            		echo "DEBUG".$rss;
             		foreach ($rss->channel->item as $item) {
               			echo "<tr></table><th class=\"kboard-latest-title\">";
               			echo $item['description']."</th>";
