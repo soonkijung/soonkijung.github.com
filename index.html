@@ -43,11 +43,11 @@
         
         <hr>
         
+        <div id="kboard-avatar-latest">
         <h3>
           <a href="http://kuptf.org/?page_id=70">대회 공지사항</a>
         </h3>
         
-        <div id="kboard-avatar-latest">
       	<table>
     		<thead>
     			<tr>
@@ -59,7 +59,7 @@
     		  <?php
     		  	$url = "http://kuptf.org/?feed=rss2&page_id=70"
             		$rss = simplexml_load_file($url);
-            		echo "DEBUG".$rss;
+            		echo $rss->channel;
             		foreach ($rss->channel->item as $item) {
               			echo "<tr><th class=\"kboard-latest-title\">";
               			echo $item['description']."</th>";
